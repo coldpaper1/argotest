@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: gitops-test
+  name: argo-deploy
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: gitops-test
+  template:
+    metadata:
+      labels:
+        app: gitops-test
+    spec:
+      containers:
+      - image: nginx
+        name: argo-ctn
+
+
+
