@@ -5,7 +5,7 @@ metadata:
     app: gitops-test
   name: argo-deploy
 spec:
-  replicas: 3
+  replicas: 6
   selector:
     matchLabels:
       app: gitops-test
@@ -15,7 +15,7 @@ spec:
         app: gitops-test
     spec:
       containers:
-      - image: nginx:1.14
+      - image: nginx:1.17
         name: argo-ctn
 
 
