@@ -5,7 +5,7 @@ metadata:
     app: gitops-test
   name: argo-deploy
 spec:
-  replicas: 6
+  replicas: 1
   selector:
     matchLabels:
       app: gitops-test
