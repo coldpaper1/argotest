@@ -15,7 +15,7 @@ spec:
         app: gitops-test
     spec:
       containers:
-      - image: nginx1.17
+      - image: nginx:1.17
         name: argo-ctn
 
 
